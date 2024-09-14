@@ -64,6 +64,8 @@ func runPrompt() {
 	}
 }
 
-func run(source string) {
+func run(source string) error {
 	log.Println(source)
+
+	return nil
 }
