@@ -54,6 +54,25 @@ const (
 	EOF = TokenType("EOF")
 )
 
+var KEYWORDS = map[string]TokenType{
+	"and":    TokenType("and"),
+	"class":  TokenType("class"),
+	"else":   TokenType("else"),
+	"false":  TokenType("false"),
+	"fun":    TokenType("fun"),
+	"for":    TokenType("for"),
+	"if":     TokenType("if"),
+	"nil":    TokenType("nil"),
+	"or":     TokenType("or"),
+	"print":  TokenType("print"),
+	"return": TokenType("return"),
+	"super":  TokenType("super"),
+	"this":   TokenType("this"),
+	"true":   TokenType("true"),
+	"var":    TokenType("var"),
+	"while":  TokenType("while"),
+}
+
 type Token struct {
 	Type    TokenType
 	Lexeme  string
