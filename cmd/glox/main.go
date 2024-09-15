@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/PabloVarg/glox/internal/scanner"
 	"github.com/PabloVarg/glox/internal/sysexits"
 )
 
@@ -65,7 +66,10 @@ func runPrompt() {
 }
 
 func run(source string) error {
-	log.Println(source)
+	var scan scanner.Scanner
+	scan.ScanTokens(source)
+
+	log.Println(scan.Tokens)
 
 	return nil
 }

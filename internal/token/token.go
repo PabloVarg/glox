@@ -6,52 +6,52 @@ type TokenType string
 
 const (
 	// Single character tokens
-	LEFT_PAREN  = "left_paren"
-	RIGHT_PAREN = "right_paren"
-	LEFT_BRACE  = "left_brace"
-	RIGHT_BRACE = "right_brace"
-	COMMA       = "comma"
-	DOT         = "dot"
-	MINUS       = "minus"
-	PLUS        = "plus"
-	SEMICOLON   = "semicolon"
-	SLASH       = "slash"
-	STAR        = "star"
+	LEFT_PAREN  = TokenType("left_paren")
+	RIGHT_PAREN = TokenType("right_paren")
+	LEFT_BRACE  = TokenType("left_brace")
+	RIGHT_BRACE = TokenType("right_brace")
+	COMMA       = TokenType("comma")
+	DOT         = TokenType("dot")
+	MINUS       = TokenType("minus")
+	PLUS        = TokenType("plus")
+	SEMICOLON   = TokenType("semicolon")
+	SLASH       = TokenType("slash")
+	STAR        = TokenType("star")
 
 	// One or two character tokens
-	BANG          = "bang"
-	BANG_EQUAL    = "bang_equal"
-	EQUAL         = "equal"
-	EQUAL_EQUAL   = "equal_equal"
-	GREATER       = "greater"
-	GREATER_EQUAL = "greater_equal"
-	LESS          = "less"
-	LESS_EQUAL    = "less_equal"
+	BANG          = TokenType("bang")
+	BANG_EQUAL    = TokenType("bang_equal")
+	EQUAL         = TokenType("equal")
+	EQUAL_EQUAL   = TokenType("equal_equal")
+	GREATER       = TokenType("greater")
+	GREATER_EQUAL = TokenType("greater_equal")
+	LESS          = TokenType("less")
+	LESS_EQUAL    = TokenType("less_equal")
 
 	// Literals
-	IDENTIFIER = "identifier"
-	STRING     = "string"
-	NUMBER     = "number"
+	IDENTIFIER = TokenType("identifier")
+	STRING     = TokenType("string")
+	NUMBER     = TokenType("number")
 
 	// Keywords
-	AND    = "and"
-	CLASS  = "class"
-	ELSE   = "else"
-	FALSE  = "false"
-	FUN    = "fun"
-	FOR    = "for"
-	IF     = "if"
-	NIL    = "nil"
-	OR     = "or"
-	PRINT  = "print"
-	RETURN = "return"
-	SUPER  = "super"
-	THIS   = "this"
-	TRUE   = "true"
-	VAR    = "var"
-	WHILE  = "while"
+	AND    = TokenType("and")
+	CLASS  = TokenType("class")
+	ELSE   = TokenType("else")
+	FALSE  = TokenType("false")
+	FUN    = TokenType("fun")
+	FOR    = TokenType("for")
+	IF     = TokenType("if")
+	NIL    = TokenType("nil")
+	OR     = TokenType("or")
+	PRINT  = TokenType("print")
+	RETURN = TokenType("return")
+	SUPER  = TokenType("super")
+	THIS   = TokenType("this")
+	TRUE   = TokenType("true")
+	VAR    = TokenType("var")
+	WHILE  = TokenType("while")
 
-	EOF = "EOF"
+	EOF = TokenType("EOF")
 )
 
 type Token struct {
